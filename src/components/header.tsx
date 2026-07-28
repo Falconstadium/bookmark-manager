@@ -17,12 +17,12 @@ export default function Header() {
 
         {/* Second Block */}
         <div className="flex items-center gap-4">
+          {/* <!-- From Uiverse.io by Ariful2634 -->  */}
           <button
-            type="button"
-            className="bg-[#273f4f] text-white p-1 rounded-md transition-colors hover:bg-[rgba(39,63,79,.90)]"
-            onClick={showForm}
-            title="Open the bookmark form"
-            aria-label="Open the bookmark form">
+            className="text-xl p-2 rounded bg-[rgba(39,63,79,.9)] text-white relative overflow-hidden group z-10 hover:text-white duration-1000"
+            onClick={showForm}>
+            <span className="absolute bg-[rgba(39,63,79,.96)] w-36 h-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
+            <span className="absolute bg-[rgba(39,63,79,1)] w-36 h-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
             <PlusIcon />
           </button>
           <button
